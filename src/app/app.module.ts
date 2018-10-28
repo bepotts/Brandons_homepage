@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SectionBodyComponent } from './section-body/section-body.component';
+import { FooterComponent } from './footer/footer.component';
+import { SwapDirective } from './section-body/swap.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SectionBodyComponent
+    SectionBodyComponent,
+    FooterComponent,
+    SwapDirective
   ],
   imports: [
     BrowserModule,
