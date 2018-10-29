@@ -6,7 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SectionBodyComponent } from './section-body/section-body.component';
 import { FooterComponent } from './footer/footer.component';
-import { SwapDirective } from './section-body/swap.directive';
+import { SwapDirective } from './section-body/utils/swap.directive';
+import { AboutComponent } from './section-body/body-components/about.component';
+import { ExperienceComponent } from './section-body/body-components/experience.component';
+import { HomeComponent } from './section-body/body-components/home.component';
+import { ProjectsComponent } from './section-body/body-components/projects.component';
+import {BodyService} from './section-body/utils/body.service';
 
 @NgModule({
   declarations: [
@@ -14,13 +19,23 @@ import { SwapDirective } from './section-body/swap.directive';
     NavbarComponent,
     SectionBodyComponent,
     FooterComponent,
-    SwapDirective
+    SwapDirective,
+    AboutComponent,
+    ExperienceComponent,
+    HomeComponent,
+    ProjectsComponent,
+  ],
+  entryComponents: [
+    AboutComponent,
+    ExperienceComponent,
+    HomeComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BodyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

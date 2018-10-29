@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { BodyComponent} from '../body.component';
+import { BodyComponent} from '../utils/body.component';
 
 @Component({
   templateUrl: '../section-body-html/home.html'
