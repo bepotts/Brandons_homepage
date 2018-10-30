@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {SectionBodyComponent} from './section-body/section-body.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  {path: '', component: SectionBodyComponent},
+  {path: 'about', component: SectionBodyComponent},
+  {path: 'experience', component: SectionBodyComponent},
+  {path: 'projects', component: SectionBodyComponent},
 ];
 
 @NgModule({
