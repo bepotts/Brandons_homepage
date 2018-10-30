@@ -11,6 +11,7 @@ import {BodyService} from './utils/body.service';
   styleUrls: ['./section-body.component.css'],
   providers: [BodyService]
 })
+// TODO make sure to use dependency injection
 export class SectionBodyComponent implements OnInit, OnDestroy {
 
   @Input() components: BodyItem[];
@@ -26,7 +27,7 @@ export class SectionBodyComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    // TODO
+    // TODO This may or may not be needed
     // clearInterval(this.interval);
   }
 
