@@ -15,7 +15,7 @@ import {Observable} from 'rxjs';
 // TODO make sure to use dependency injection
 export class SectionBodyComponent implements OnInit, OnDestroy {
 
-  @Input() components: BodyItem[];
+  @Input() components: {};
   @ViewChild(SwapDirective) bodyHost: SwapDirective;
   currentURL: Observable<UrlSegment[]>;
 
@@ -39,18 +39,8 @@ export class SectionBodyComponent implements OnInit, OnDestroy {
     let currentRoute: String;
     this.currentURL.subscribe(value => currentRoute = value.toString());
 
-    let bodyItem;
-    if (currentRoute === '') {
-      bodyItem = this.components[0];
-    } else if (currentRoute === 'about') {
-      bodyItem = this.components[1];
-    } else if (currentRoute === 'experience') {
-      bodyItem = this.components[2];
-    } else if (currentRoute === 'projects') {
-      bodyItem = this.components[3];
-    } else {
-      // TODO Need to have a default view
-    }
+    const bodyItem = this.components[currentRoute];
+    // TODO need to come up with a default view
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(bodyItem.component);
     const viewContainerRef = this.bodyHost.viewContainerRef;
     viewContainerRef.clear();
