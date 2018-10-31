@@ -5,6 +5,7 @@ import {BodyItem} from './utils/body-item';
 import {BodyService} from './utils/body.service';
 import {ActivatedRoute, UrlSegment} from '@angular/router';
 import {Observable} from 'rxjs';
+import {stringify} from 'querystring';
 
 @Component({
   selector: 'app-section-body',
@@ -34,18 +35,16 @@ export class SectionBodyComponent implements OnInit, OnDestroy {
     // clearInterval(this.interval);
   }
 
+  // TODO need to come up with a default view
   loadComponent() {
 
-    let currentRoute: String;
+    let currentRoute: string;
     this.currentURL.subscribe(value => currentRoute = value.toString());
-
-    const bodyItem = this.components[currentRoute];
-    // TODO need to come up with a default view
+    const bodyItem: BodyItem = this.components[currentRoute];
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(bodyItem.component);
     const viewContainerRef = this.bodyHost.viewContainerRef;
     viewContainerRef.clear();
-    const componentRef = viewContainerRef.createComponent(componentFactory);
-    componentRef.instance.data = bodyItem.data;
+    viewContainerRef.createComponent(componentFactory);
   }
 
 }
