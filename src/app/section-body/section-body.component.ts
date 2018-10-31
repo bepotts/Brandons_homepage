@@ -5,7 +5,6 @@ import {BodyItem} from './utils/body-item';
 import {BodyService} from './utils/body.service';
 import {ActivatedRoute, UrlSegment} from '@angular/router';
 import {Observable} from 'rxjs';
-import {stringify} from 'querystring';
 
 @Component({
   selector: 'app-section-body',
