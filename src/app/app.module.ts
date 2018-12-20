@@ -11,7 +11,8 @@ import { AboutComponent } from './section-body/body-components/about.component';
 import { ExperienceComponent } from './section-body/body-components/experience.component';
 import { HomeComponent } from './section-body/body-components/home.component';
 import { ProjectsComponent } from './section-body/body-components/projects.component';
-import {BodyService} from './section-body/utils/body.service';
+import { BodyService } from './section-body/utils/body.service';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {BodyService} from './section-body/utils/body.service';
     ExperienceComponent,
     HomeComponent,
     ProjectsComponent,
+    ContactComponent,
   ],
   entryComponents: [
     AboutComponent,
