@@ -1,4 +1,6 @@
-# Personal Homepage
+# Personal Homepage 
+
+(Site is still in active development)
 
 [Site](www.brandonpotts.info)
 
