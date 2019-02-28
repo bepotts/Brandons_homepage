@@ -12,7 +12,6 @@ import { ExperienceComponent } from './section-body/body-components/experience.c
 import { HomeComponent } from './section-body/body-components/home.component';
 import { ProjectsComponent } from './section-body/body-components/projects.component';
 import { BodyService } from './section-body/utils/body.service';
-import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { ContactComponent } from './contact/contact.component';
     ExperienceComponent,
     HomeComponent,
     ProjectsComponent,
-    ContactComponent,
   ],
   entryComponents: [
     AboutComponent,
