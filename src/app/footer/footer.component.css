@@ -4,11 +4,33 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 90px;
 }
 
 p {
   text-align: center;
   font-size: 25px;
   color: white;
+}
+
+.contact_section {
+  display: flex;
+  flex: 40px;
+  top: 500px;
+  height: 80px;
+  align-items: center;
+}
+
+ul {
+  display: inline-flex;
+  margin: 0 auto;
+  left: 40%;
+}
+
+li {
+  list-style: none;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
 }

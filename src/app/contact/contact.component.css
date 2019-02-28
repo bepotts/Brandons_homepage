@@ -1,24 +1,24 @@
-.contact_section {
-  display: flex;
-  flex: 40px;
-  background: red;
-  position: relative;
-  top: 500px;
-  height: 80px;
-  align-items: center;
-}
+/*.contact_section {*/
+  /*display: flex;*/
+  /*flex: 40px;*/
+  /*background: red;*/
+  /*position: relative;*/
+  /*top: 500px;*/
+  /*height: 80px;*/
+  /*align-items: center;*/
+/*}*/
 
-ul {
-  display: inline-flex;
-  position: inherit;
-  left: 40%;
-}
+/*ul {*/
+  /*display: inline-flex;*/
+  /*position: inherit;*/
+  /*left: 40%;*/
+/*}*/
 
-li {
-  list-style: none;
-  padding: 1em;
-}
+/*li {*/
+  /*list-style: none;*/
+  /*padding: 1em;*/
+/*}*/
 
-a {
-  text-decoration: none;
-}
+/*a {*/
+  /*text-decoration: none;*/
+/*}*/
