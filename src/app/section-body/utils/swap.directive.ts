@@ -1,3 +1,7 @@
+/**
+ * Class is used to swap BodyItems on when the route changes.
+ */
+
 import { Directive, ViewContainerRef } from '@angular/core';
 
 @Directive({

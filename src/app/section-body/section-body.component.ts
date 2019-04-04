@@ -1,3 +1,10 @@
+/**
+ * Class represents the body (and main content) of the website.
+ *
+ * This class calls separate components depending on the route chosen.
+ *
+ */
+
 import {Component, ComponentFactoryResolver, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 
 import {SwapDirective} from './utils/swap.directive';
@@ -34,6 +41,9 @@ export class SectionBodyComponent implements OnInit, OnDestroy {
     // clearInterval(this.interval);
   }
 
+  /**
+   * Loads the appropriate component depending on the given route.
+   */
   // TODO need to come up with a default view
   loadComponent() {
 

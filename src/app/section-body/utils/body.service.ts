@@ -1,3 +1,7 @@
+/**
+ * Class gathers the separate body components.
+ */
+
 import {Injectable} from '@angular/core';
 
 import {BodyItem} from './body-item';
