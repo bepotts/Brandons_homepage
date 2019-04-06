@@ -1,5 +1,5 @@
 /**
- * Class represents the component that controls the footer throughout
+ * Class represents the components that controls the footer throughout
  * the project.
  */
 

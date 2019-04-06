@@ -42,7 +42,7 @@ export class SectionBodyComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * Loads the appropriate component depending on the given route.
+   * Loads the appropriate components depending on the given route.
    */
   // TODO need to come up with a default view
   loadComponent() {

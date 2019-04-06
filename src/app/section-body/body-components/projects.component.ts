@@ -1,5 +1,5 @@
 /**
- * Class represents a component that shows HTML correlated with the project
+ * Class represents a components that shows HTML correlated with the project
  * page.
  */
 import { Component, Input } from '@angular/core';

@@ -1,20 +1,23 @@
+/**
+ * File tests the Navbar Component
+ */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SectionBodyComponent } from './section-body.component';
+import { NavbarComponent } from '../../app/navbar/navbar.component';
 
-describe('SectionBodyComponent', () => {
-  let component: SectionBodyComponent;
-  let fixture: ComponentFixture<SectionBodyComponent>;
+describe('NavbarComponent', () => {
+  let component: NavbarComponent;
+  let fixture: ComponentFixture<NavbarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SectionBodyComponent ]
+      declarations: [ NavbarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SectionBodyComponent);
+    fixture = TestBed.createComponent(NavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

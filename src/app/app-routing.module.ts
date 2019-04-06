@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {SectionBodyComponent} from './section-body/section-body.component';
 
-const routes: Routes = [
+
+// Exporting so routes can be tested.
+export const routes: Routes = [
   {path: '', component: SectionBodyComponent},
   {path: 'about', component: SectionBodyComponent},
   {path: 'experience', component: SectionBodyComponent},

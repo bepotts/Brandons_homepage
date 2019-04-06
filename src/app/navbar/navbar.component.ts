@@ -1,5 +1,5 @@
 /**
- * Class represents the component that controls the Navbar for
+ * Class represents the components that controls the Navbar for
  * the website.
  */
 import { Component, OnInit } from '@angular/core';
